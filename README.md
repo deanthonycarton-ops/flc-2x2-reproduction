@@ -22,6 +22,7 @@ Outputs `results_bristol_flc_clean.json`.
 With these assumptions, total error drops from `729-875 Pa` at episode 0 to `152-184 Pa` by episode 20, reaches a minimum of `136-162 Pa` around episodes 39-44, and rises to `413-554 Pa` by episode 140.
 
 ## 2. Reversible `Eq. (4)` Sensitivity & Unknown 2-Channel Clog Benchmark (28 Pairs)
+At q_pump = 3.40 ml/s, cumulative integration of Eq. (4) reaches episode 400 in 8,810.8 s of simulated time (~12.6 tau), where channel conductances relax toward D_ini and error rises again.
 In a redundant 8-channel `2x2` topology at equal total conductance budget (`sum D = 0.003683 ml/(s*Pa)`), all **28 possible dual-channel clog pairs** (24 route-preserving pairs + 4 total route-severing pairs) were evaluated against an open-loop minimax static design optimized across failure states:
 
 | Arm (`survivable 24 pairs` / `all 28 pairs`) | Clean Error (Pa) | Peak Spike at Clog (Pa) | Final Mean Error (Pa) | Final Worst-Pair Error (Pa) |
