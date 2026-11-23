@@ -18,7 +18,7 @@ Uses only the Python standard library (`json`, `math`, `pathlib`), executes buil
 | Simulation Run (1-based episodes) | P0 (Pa) | Ep 1 (Pa) | Ep 20 (Pa) | Min Error (Pa) | Ep 140 (Pa) | Ep 400 (Pa) | Long-Horizon & Reference Values |
 | :--- | :---: | :---: | :---: | :---: | :---: | :---: | :--- |
 | Irreversible, Fig. 4D/E (140 ep) | 1245.9 | 776.0 | 133.0 | 105.0 (ep 44) | **771.9** | - | Author's Python `772` (`3522 s`), MATLAB `787`, ours `771.9` (`3521.7 s`) |
-| Reversible, Fig. 5G-I (1,400 ep; extended to 10,000) | 1274.1 | 764.5 | 46.3 | 6.1 (ep 259) | 23.2 | **27.1** (Py: `27`) | Python port: `101 Pa` (`ep 1,400`, `17,047 s`; ours `101.4 Pa`, `17047.1 s`), `107.6 Pa` (`ep 10,000`, vs `~108 Pa` in author's `reproduce.py --long`). MATLAB (`reproduce.py` header): `108 Pa` (`ep 1,000`), `127 Pa` (`ep 1,400`, `18,830 s`). |
+| Reversible, Fig. 5G-I (1,400 ep; extended to 10,000) | 1274.1 | 764.5 | 46.3 | 6.1 (ep 259) | 23.2 | **27.1** (Py: `27`) | Python port: `101 Pa` (`ep 1,400`, `17,047 s`; ours `101.4 Pa`, `17047.1 s`), `107.6 Pa` (`ep 10,000`, vs `~108 Pa` in author's `reproduce.py --long`). Original MATLAB (`reproduce.py` header): `108 Pa` (`ep 1,000`), `127 Pa` (`ep 1,400`); author's reference time for the experimental protocol: `18,830 s`. |
 
 *Simulation vs. physical experiment:* These runs reproduce the lumped resistive **simulation** (`772 Pa` in Python / `787 Pa` in MATLAB at ep 140), whereas in the physical PVA hardware experiment (`Fig. 4C`) total error reaches `1192 Pa` at episode 137.
 

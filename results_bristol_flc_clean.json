@@ -113,8 +113,8 @@
     "original_matlab_fig5_ep1000_ep1400_Pa": {
       "ep1000_Pa": 108,
       "ep1400_Pa": 127,
-      "sim_time_s": 18830,
-      "source": "wurui1991/flc-reproduction-notes reproduce.py header line"
+      "protocol_ref_sim_time_s": 18830,
+      "source": "reproduce.py header (108, 127 Pa) and author correspondence (18,830 s protocol prediction)"
     }
   },
   "self_checks_passed": {
